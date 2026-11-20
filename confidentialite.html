@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Lumislides</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #ffffff; --text: #2c2c2b; --text-2: #73726e; --border: #e9e8e5; --accent: #2383e2;
+    --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #191919; --text: #e8e8e6; --text-2: #9b9b98; --border: #2f2f2f; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.65 var(--font); }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+  a { color: var(--accent); }
+  .back { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-weight: 600; }
+  .back img { width: 32px; height: 32px; }
+  h1 { font-size: 32px; letter-spacing: -.01em; margin: 32px 0 4px; }
+  .date { color: var(--text-2); font-size: 14px; margin: 0 0 24px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  li { margin: 4px 0; }
+  .box { padding: 16px 20px; border-radius: 12px; border: 1px solid var(--border); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-2); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./"><img src="icon.svg" alt="">Lumislides</a>
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 20 novembre 2026</p>
+
+  <p class="box"><b>En bref :</b> Lumislides n'a <b>pas de serveur</b> et ne <b>collecte aucune donnée</b>. Tout se passe dans
+    votre navigateur. L'extension ne communique qu'avec Notion, et seulement quand vous le lui demandez.</p>
+
+  <h2>Ce que fait l'extension</h2>
+  <ul>
+    <li><b>Présenter une page</b> : l'extension lit la page Notion affichée dans votre navigateur pour en faire des
+      diapositives. Cette lecture se fait sur votre ordinateur ; rien n'est envoyé ailleurs.</li>
+    <li><b>Réglages et préférences</b> (thème, transition, tailles retouchées, notes en attente, progression de la page
+      Bienvenue) : enregistrés dans votre navigateur uniquement.</li>
+    <li><b>Exports</b> (PDF, images, PowerPoint) : fabriqués sur votre ordinateur et enregistrés là où vous le choisissez.</li>
+  </ul>
+
+  <h2>Quand l'extension communique avec Notion</h2>
+  <p>Seulement si <b>vous</b> reliez l'extension à votre espace Notion, en collant dans ses réglages le « secret » d'une
+    intégration que vous avez créée vous-même. Ce secret reste dans votre navigateur. L'extension s'en sert pour appeler
+    l'API officielle de Notion (api.notion.com), à votre demande :</p>
+  <ul>
+    <li>écrire les notes que vous tapez dans la vue présentateur, dans le bloc « Notes du présentateur » de la diapositive ;</li>
+    <li>réécrire un texte que vous corrigez ou mettez en forme en mode retouche ;</li>
+    <li>lire le nom du créateur de la page, pour l'afficher sur la diapositive de titre.</li>
+  </ul>
+  <p>Ces échanges se font directement entre votre navigateur et Notion, selon la
+    <a href="https://www.notion.com/notion/privacy-policy">politique de confidentialité de Notion</a>. L'auteur de Lumislides
+    n'y a jamais accès.</p>
+
+  <h2>Ce que l'extension ne fait pas</h2>
+  <ul>
+    <li>Aucune mesure d'audience, aucun cookie publicitaire, aucun outil de suivi.</li>
+    <li>Aucune vente ni aucun partage de données.</li>
+    <li>Aucune intelligence artificielle extérieure : vos pages ne quittent pas votre navigateur, sauf vers Notion comme
+      décrit ci-dessus.</li>
+  </ul>
+
+  <h2>Effacer vos données</h2>
+  <ul>
+    <li>Dans les réglages de l'extension, <b>« Repartir de zéro »</b> efface vos préférences et votre progression (le secret
+      d'intégration est gardé) ; le bouton <b>« Supprimer le jeton »</b> efface le secret.</li>
+    <li>Désinstaller l'extension efface tout ce qu'elle a enregistré.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="https://github.com/GGohan/lumislides/issues">ouvrez une demande sur la page du projet</a>.</p>
+
+  <footer>Lumislides est une extension indépendante, non affiliée à Notion Labs, Inc. Notion est une marque de Notion Labs, Inc.</footer>
+</main>
+</body>
+</html>
